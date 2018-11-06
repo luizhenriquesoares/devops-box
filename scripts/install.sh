@@ -17,7 +17,7 @@ PACKER_VERSION="1.2.4"
 if [ ${REDHAT_BASED} ] ; then
   yum -y update
   yum install -y docker ansible unzip wget
-else 
+else
   apt-get update
   apt-get -y install docker.io ansible unzip
 fi
@@ -42,6 +42,11 @@ T_RETVAL=${PIPESTATUS[0]}
 && wget -q https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip \
 && unzip -o terraform_${TERRAFORM_VERSION}_linux_amd64.zip -d /usr/local/bin \
 && rm terraform_${TERRAFORM_VERSION}_linux_amd64.zip
+
+## Instal Kops
+curl -LO https://github.com/kubernetes/kops/releases/download/$(curl -s https://api.github.com/repos/kubernetes/kops/releases/latest | grep tag_name | cut -d '"' -f 4)/kops-linux-amd64 \
+& chmod +x kops-linux-amd64 \
+& sudo mv kops-linux-amd64 /usr/local/bin/kops
 
 # packer
 P_VERSION=$(/usr/local/bin/packer -v)
