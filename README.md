@@ -5,3 +5,10 @@
 * Terraform
 * AWS CLI
 * Ansible
+
+
+## INITIALIZE VAGRANT
+
+* vagrant init
+* vagrant up
+* vagrant ssh
