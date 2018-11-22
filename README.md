@@ -8,6 +8,7 @@
 * Kubernetes
 * Docker
 * Kops
+* Minikube
 
 ## up vagrant to use.
 
