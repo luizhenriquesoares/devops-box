@@ -5,6 +5,9 @@
 * Terraform
 * AWS CLI
 * Ansible
+* Kubernetes
+* Docker
+* Kops
 
 ## up vagrant to use.
 
