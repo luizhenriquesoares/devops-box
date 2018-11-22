@@ -6,8 +6,7 @@
 * AWS CLI
 * Ansible
 
-
-## INITIALIZE VAGRANT
+## up vagrant to use.
 
 * vagrant init
 * vagrant up
