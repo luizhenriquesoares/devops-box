@@ -56,8 +56,8 @@ curl -LO https://github.com/kubernetes/kops/releases/download/$(curl -s https://
 & sudo mv kops-linux-amd64 /usr/local/bin/kops
 
 ## install Minikube
-curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 \
-&& sudo install minikube-linux-amd64 /usr/local/bin/minikube
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+sudo install minikube-linux-amd64 /usr/local/bin/minikube
 
 # packer
 P_VERSION=$(/usr/local/bin/packer -v)
