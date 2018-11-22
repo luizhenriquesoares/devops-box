@@ -9,6 +9,7 @@
 * Docker
 * Kops
 * Minikube
+* Helm Chart
 
 ## up vagrant to use.
 

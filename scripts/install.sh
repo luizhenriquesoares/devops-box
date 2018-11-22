@@ -55,6 +55,11 @@ curl -LO https://github.com/kubernetes/kops/releases/download/$(curl -s https://
 & chmod +x kops-linux-amd64 \
 & sudo mv kops-linux-amd64 /usr/local/bin/kops
 
+## Install Helm Chart
+curl https://raw.githubusercontent.com/helm/helm/master/scripts/get > get_helm.sh
+chmod 700 get_helm.sh
+./get_helm.sh
+
 ## install Minikube
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
 sudo install minikube-linux-amd64 /usr/local/bin/minikube
