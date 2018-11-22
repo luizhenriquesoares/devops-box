@@ -61,8 +61,7 @@ chmod 700 get_helm.sh
 ./get_helm.sh
 
 ## install Minikube
-curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
-sudo install minikube-linux-amd64 /usr/local/bin/minikube
+curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.8.0/minikube-linux-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/
 
 # packer
 P_VERSION=$(/usr/local/bin/packer -v)
